@@ -1,21 +1,20 @@
 {
   "name": "project-jump",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Simple Project Navigation for Atom, without the fuss.",
   "author": "Lixquid",
   "repository": "https://github.com/lixquid/atom-project-jump",
   "license": "GPL-3.0",
   "keywords": [
-    "projects", "mavigation"
+    "projects",
+    "mavigation"
   ],
-
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
   },
   "dependencies": {
     "atom-space-pen-views": "^2.1.0"
-},
-
+  },
   "main": "./lib/project-jump",
   "activationCommands": {
     "atom-workspace": [
@@ -24,6 +23,4 @@
       "project-jump:switch"
     ]
   }
-
-
 }
