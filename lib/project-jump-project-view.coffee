@@ -21,6 +21,7 @@ module.exports =
 
 			@panel = atom.workspace.addModalPanel( item: this, visible: false )
 			@addClass( "project-jump" )
+			@list.addClass( "mark-active" )
 
 		getFilterKey: ->
 			return "name"
@@ -29,6 +30,8 @@ module.exports =
 			el = document.createElement( "li" )
 			el.textContent = project.name
 			el.dataset.dir = project.dir
+			if atom.project.getPaths().indexOf( project.dir ) != -1
+				el.classList.add( "active" )
 			return el
 
 		destroy: ->
