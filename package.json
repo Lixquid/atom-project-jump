@@ -1,6 +1,6 @@
 {
   "name": "project-jump",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Simple Project Navigation for Atom, without the fuss.",
   "author": "Lixquid",
   "repository": "https://github.com/lixquid/atom-project-jump",
