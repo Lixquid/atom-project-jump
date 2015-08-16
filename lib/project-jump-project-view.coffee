@@ -67,10 +67,6 @@ module.exports =
 			@setItems( list )
 
 		show: ( mode ) ->
-			@editor = atom.workspace.getActiveTextEditor()
-			if not @editor?
-				return
-
 			@mode = mode
 			@attach()
 
