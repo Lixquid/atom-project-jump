@@ -1,3 +1,6 @@
+## 0.2.1
+- Fixed Project List only displaying on Text Editors
+
 # 0.2.0
 - Added Marker for currently open projects
 
