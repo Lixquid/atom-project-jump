@@ -1,3 +1,6 @@
+# 0.3.0
+- Added `Remove`
+
 ## 0.2.1
 - Fixed Project List only displaying on Text Editors
 
