@@ -20,7 +20,8 @@
     "atom-workspace": [
       "project-jump:add",
       "project-jump:open",
-      "project-jump:switch"
+      "project-jump:switch",
+      "project-jump:remove"
     ]
   }
 }

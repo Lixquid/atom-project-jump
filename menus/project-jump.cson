@@ -15,6 +15,10 @@ menu: [
 				label: "Switch"
 				command: "project-jump:switch"
 			}
+			{
+				label: "Remove"
+				command: "project-jump:remove"
+			}
 		]
 	]
 ]
