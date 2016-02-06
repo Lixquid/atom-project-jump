@@ -2,6 +2,8 @@
 
 Simple Project Navigation for Atom, without the fuss.
 
+![Project Jump Demo](https://i.imgur.com/4adxREp.gif)
+
 ## Commands
 
 All commands will bring up a list of projects in your Project Home directory to
