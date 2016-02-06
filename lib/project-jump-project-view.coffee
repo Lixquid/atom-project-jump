@@ -13,6 +13,7 @@ module.exports =
 
 		panel: null
 		mode: null
+		multi: null
 
 		## SelectListView Methods ##
 
@@ -41,9 +42,11 @@ module.exports =
 			@panel.hide()
 
 		confirmed: ( project ) ->
-			@cancel()
+			@cancel() unless @multi
 
 			@openProject( project.dir )
+
+			@addProjects() if @multi
 
 		attach: ->
 			@storeFocusedElement()
@@ -66,8 +69,9 @@ module.exports =
 
 			@setItems( list )
 
-		show: ( mode ) ->
-			@mode = mode
+		show: ( options ) ->
+			@mode = options.mode
+			@multi = options.multi
 			@attach()
 
 		openProject: ( dir ) ->
