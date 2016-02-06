@@ -11,6 +11,10 @@ navigate with.
 
 Adds a project to your current workspace.
 
+### `Add Multiple`
+
+Adds multiple projects to your current workspace.
+
 ### `Switch`
 
 Switches your current workspace to a new Project.
@@ -22,3 +26,7 @@ Opens a project in a new window.
 ### `Remove`
 
 Removes a project from your currently open projects.
+
+### `Remove Multiple`
+
+Removes multiple projects from your currently open projects.
