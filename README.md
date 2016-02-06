@@ -2,7 +2,7 @@
 
 Simple Project Navigation for Atom, without the fuss.
 
-![Project Jump Demo](https://i.imgur.com/4adxREp.gif)
+![Project Jump Demo](http://i.imgur.com/1sIOls9.gif)
 
 ## Commands
 
