@@ -19,10 +19,12 @@ module.exports = ProjectJump =
 
 		@commands = new CompositeDisposable
 		@commands.add( atom.commands.add( "atom-workspace",
-			"project-jump:add": => @listView.show( "add" )
-			"project-jump:open": => @listView.show( "open" )
-			"project-jump:switch": => @listView.show( "switch" )
-			"project-jump:remove": => @listViewRemove.show()
+			"project-jump:add": => @listView.show( {mode: "add", multi: false} )
+			"project-jump:add-multiple": => @listView.show( {mode: "add", multi: true} )
+			"project-jump:open": => @listView.show( {mode: "open", multi: false} )
+			"project-jump:remove": => @listViewRemove.show( {multi: false} )
+			"project-jump:remove-multiple": => @listViewRemove.show( {multi: true} )
+			"project-jump:switch": => @listView.show( {mode: "switch", multi: false} )
 		) )
 
 	deactivate: ->

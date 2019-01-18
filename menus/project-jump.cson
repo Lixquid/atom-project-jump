@@ -8,16 +8,24 @@ menu: [
 				command: "project-jump:add"
 			}
 			{
+				label: "Add Multiple"
+				command: "project-jump:add-multiple"
+			}
+			{
 				label: "Open"
 				command: "project-jump:open"
 			}
 			{
-				label: "Switch"
-				command: "project-jump:switch"
-			}
-			{
 				label: "Remove"
 				command: "project-jump:remove"
+			}
+			{
+				label: "Remove Multiple"
+				command: "project-jump:remove-multiple"
+			}
+			{
+				label: "Switch"
+				command: "project-jump:switch"
 			}
 		]
 	]

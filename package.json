@@ -18,10 +18,12 @@
   "main": "./lib/project-jump",
   "activationCommands": {
     "atom-workspace": [
+      "project-jump:add-multiple",
       "project-jump:add",
       "project-jump:open",
-      "project-jump:switch",
-      "project-jump:remove"
+      "project-jump:remove-multiple",
+      "project-jump:remove",
+      "project-jump:switch"
     ]
   }
 }

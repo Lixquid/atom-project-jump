@@ -12,6 +12,7 @@ module.exports =
 		## Fields ##
 
 		panel: null
+		multi: null
 
 		## SelectListView Methods ##
 
@@ -36,9 +37,11 @@ module.exports =
 			@panel.hide()
 
 		confirmed: ( project ) ->
-			@cancel()
+			@cancel() unless @multi
 
 			@removeProject( project )
+
+			@addProjects() if @multi
 
 		attach: ->
 			@storeFocusedElement()
@@ -51,7 +54,8 @@ module.exports =
 		addProjects: ->
 			@setItems( atom.project.getPaths() )
 
-		show: ->
+		show: ( options ) ->
+			@multi = options.multi
 			@attach()
 
 		removeProject: ( dir ) ->
